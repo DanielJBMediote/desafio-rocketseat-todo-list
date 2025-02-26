@@ -1,7 +1,7 @@
 
 import styles from './List.module.css'
 import { Task } from './Task'
-import Clipboard from '../assets/clipboard.svg'
+import Clipboard from '../assets/Clipboard.svg'
 
 interface ListProps {
     tasks: Task[];
