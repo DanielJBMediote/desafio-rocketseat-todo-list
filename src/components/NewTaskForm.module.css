@@ -1,0 +1,39 @@
+.newTaskFormWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto 22rem;
+    margin-top: -2rem;
+    width: 46rem;
+}
+
+.newTaskFormWrapper > input[type="text"] {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: var(--gray-500);
+    color: var(--gray-300);
+    border: none;
+    width: inherit;
+}
+
+.newTaskFormWrapper > input[type="text"]:focus {
+    outline: 1px solid var(--purple-dark);
+    color: var(--gray-100);
+}
+
+.newTaskFormWrapper > button {
+    background-color: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 0.85rem;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.newTaskFormWrapper > button:hover {
+    background-color: var(--blue);
+}

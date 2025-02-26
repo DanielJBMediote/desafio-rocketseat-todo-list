@@ -1,0 +1,49 @@
+.taskContent {
+    display: flex;
+    gap: .5rem;
+}
+
+.inputCheckbox > input[type="checkbox"] {
+    display: none;
+}
+
+.inputCheckbox label div {
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.inputUnckeded {
+    border: 1px solid var(--blue);
+}
+
+.inputUnckeded:hover {
+    border: 1px solid var(--blue-dark); 
+}
+
+.inputChecked {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputChecked:hover {
+    background-color: var(--purple-dark);
+}
+
+.taskContent > p {
+    line-height: 1.4;
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+.taskNotDone {
+    color: var(--gray-100);
+}
+
+.taskDone {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}

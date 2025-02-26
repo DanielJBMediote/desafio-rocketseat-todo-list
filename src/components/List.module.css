@@ -1,0 +1,103 @@
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  gap: 1.5rem;
+  margin: auto 22rem;
+  width: 46rem;
+}
+
+.listHeader {
+    margin-top: 5.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--blue);
+}
+
+.listTaskInfo, .listTaskDone {
+    display: flex;
+    gap: .5rem;
+    font-weight: bold;
+    font-size: .85rem;
+}
+
+.listTaskDone {
+    color: var(--purple);
+}
+
+.listTaskInfo > span, .listTaskDone > span {
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    font-size: .75rem;
+    border-radius: 8px;
+    padding: 2px .5rem;
+}
+
+.listWrapper ul {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style: none;
+    padding: 0;
+}
+
+.listWrapper ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    color: var(--gray-100);
+}
+
+
+.listWrapper ul li p {
+    font-size: .85rem;
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+.listWrapper ul li button {
+    border: none;
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.listWrapper ul li button:hover {
+    background-color: var(--gray-400);
+    color: var(--danger);
+}
+
+.emptyTask {
+    border-top: 1px solid var(--gray-400);
+    border-radius: .5rem;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emptyTask svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.emptyTask div {
+    font-size: 1rem;
+    color: var(--gray-300);
+}
+
+
